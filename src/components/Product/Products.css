@@ -1,0 +1,143 @@
+.fragment{
+    min-height: 100vh;
+}
+
+.productsHeading{
+    margin: 1vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid rgba(0,0,0,0.171);
+    padding: 2vmax;
+    color: rgba(0,0,0,0.678);
+    font: 500 1.5vmax "Roboto";
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    min-height: 30vh;
+    margin-left: 4vmax;
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+/* this pagination class is the by default class of the pagination.
+ do inspect to confirm*/
+.pagination{ 
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item{
+    background-color: rgb(255,255,255);
+    list-style: none;
+    border: 1px solid rgba(0,0,0,0.178);
+    padding: 0.8vmax 1.3vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link{
+    text-decoration: none;
+    font: 300 1vmax "Roboto";
+    color: rgb(80,80,80);
+    transition: all 0.3s;
+}
+
+.page-item:hover{
+    background-color: rgb(230,230,230);
+}
+
+.page-item:hover .page-link{
+    color: rgb(0, 0, 0);
+}
+
+.pageItemActive{
+    background-color: tomato;
+}
+
+.pageLinkActive{
+    color: white;
+}
+
+.filterBox{
+    width: 10vmax;
+    gap: 1vmax;
+    position: absolute;
+    top: 13vmax;
+    left: 1.5vmax;
+    padding: 1vmax 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categoryBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+    list-style: none;
+    color: rgba(0,0,0,0.61);
+    font: 400 1vmax "Roboto";
+    margin-top: 1vmax;
+    margin-left: -2.5vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-link:hover{
+    color: tomato;
+}
+
+
+.filterBox > fieldset{
+    margin-top: 2vmax;
+    margin-left: -1vmax;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+}
+
+
+.noProduct{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-right: 3rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .filterBox{
+        width: 30vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link{
+        font: 300 1.7vmax "Roboto";
+    }
+
+
+    .category-link{
+        font: 400 2.1vmax "Roboto";
+        margin-left: -2.5vmax;
+    }
+
+}

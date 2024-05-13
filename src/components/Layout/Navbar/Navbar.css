@@ -1,0 +1,186 @@
+
+.navParent{
+    background-image: linear-gradient(to right , #635dc0 , #3027ae);
+    width: 100%;
+    z-index: 100;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.123);
+}
+
+.navbar{
+    padding-bottom: 0.5rem;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+.navbarLogo > img{
+    width: 200px;
+    color: blue;
+}
+
+
+
+.link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    transition: all 0.3s;
+    font-size: 1.5vmax;
+}
+
+.link:hover{
+    color: #eb4034;
+}
+
+.links{
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 10vmax;
+    height: 5vmax;
+}
+
+.navIcons{
+    border: 1px solid black;
+    display: flex;
+    align-items: baseline; 
+}
+
+
+
+/* speed dial */
+.speedDialIcon{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+}
+
+.user-login-icon {
+    width: 44px;
+    height: 44px;
+    color: white;
+}
+
+.cart-icon{
+    width: 39px;
+    height: 46px;
+    color: white;
+}
+
+.cart-n-login{
+    display: flex;
+    gap: 0.3rem;
+    position: absolute;
+    top: 0.8rem;
+}
+
+.speedDial{
+    position: absolute;
+    top:20%;
+}
+
+
+/* Center area */
+.centerArea{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input[type="text"]{
+    margin-top: 1rem;
+    border: none;
+    padding: 0.8rem;
+    border-top-left-radius: 25px;
+    width: 100%;
+}
+
+.searchBox input[type="submit"]{
+    border: none;
+    padding: 0.8rem;
+    background-color: tomato;
+    margin-top: 1rem;
+    border-bottom-right-radius: 25px;
+}
+
+.searchBox input[type="submit"]:hover{
+    background-color: rgb(243, 64, 33);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    }
+
+    .navbarLogo > img{
+        width: 200px;
+    }
+
+    .links{
+        gap: 2vmax;
+    }
+
+    .link{
+        color: black;
+        background-color: white;
+        transition: all 0.3s;
+        padding: 0.6vmax 1vmax;
+        border-radius: 10px;
+        font: 500 2vmax "Roboto";
+    }
+
+    .centerArea{
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .searchBox input[type="text"]{
+        width: 100%;
+    }
+
+    .speedDial{
+        top: -0.01rem;
+      left: 0.7rem;
+    }
+
+
+
+
+
+
+    .user-login-icon {
+        position: relative;
+        right: 0.7rem;
+    }
+    
+    
+    .cart-n-login{
+        position: absolute;
+        left: -0.3rem;
+        top: 0.3rem;
+    }
+}
+
+
